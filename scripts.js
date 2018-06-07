@@ -21,6 +21,11 @@ var page =0;
         reload();
     })
 
+    $('#prev').click(function(){
+        $("#newcard").children().remove();
+        page=page-1;
+        reload();
+    })
 
     function reload(){
         var res = alldata['results'];
