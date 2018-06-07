@@ -1,0 +1,94 @@
+.searchbackground{
+    background-color: rgb(45, 45, 45);
+}
+
+.searchbackground .row1{
+    color: white;
+    text-align: center;
+    font-size: 15pt; 
+    padding-top:24px;
+}
+
+.searchbackground .row2{
+    color: white;
+    text-align:center;
+    font-size: 11px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.searchbackground .rowsearch{
+    width: 269px;
+    height: 40px;
+    padding-top:14px;
+    margin: 0 auto; 
+}
+
+.searchbackground .rowsearch input {
+    background-color: rgb(240, 240, 240);
+    height: 40px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+.searchbackground .rowsearch button {
+    background-color:rgb(247, 148, 29);
+    height:40px;
+    width: 80px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.card{
+    width: 300px;
+    height: 140px;
+    background-color: rgb(240,240,240);
+    padding: 20px;
+}
+
+.logo_song {
+    display: inline-block;
+}
+
+.title {
+    display: inline-block;
+    width: 150px;
+    padding-left: 20px;
+}
+
+.song{
+   text-align: center;
+}
+
+.author{
+    text-align: center;
+    padding-top: 5px;
+}
+
+.line{
+    border-bottom: 1px solid lightgrey;
+    width: 100px;
+    margin: 0 auto;
+}
+
+.footer{
+    background-color: rgb(45,45,45);
+}
+
+.footer p {
+    text-align: center;
+    color: white;
+    margin: 0;
+    padding-top: 26px;
+    padding-bottom: 27px;
+}
+
+.btns{
+    background-color: rgb(247, 148, 29) !important;
+    color: white;
+    border-radius: 13px !important;
+    width: 84px;
+}
+.buttons{
+    margin: 0 auto;
+}
