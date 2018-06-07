@@ -73,6 +73,11 @@
 
 .footer{
     background-color: rgb(45,45,45);
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding-top:27px;
+    padding-bottom: 27px;
 }
 
 .footer .p {
@@ -81,8 +86,8 @@
 
 .footer hr {
     color: white;
-    width: 30px;
-    margin: 0 5px;
+    width: 53px;
+    margin: 0 13px;
 }
 
 .footer div {
