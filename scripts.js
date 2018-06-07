@@ -23,13 +23,15 @@ $( document ).ready(function() {
                                     <div class="line">
                                     </div>
                                     <div class="author">
-                                        <p>By Ed Sheeran</p>
+                                        <p>`+ res[i]['artistName'] +`</p>
                                     </div>
                                 </div>
                                 </div>
                                 </div>`;
                     var html = $.parseHTML(cards);
                     $('#newcard').append(html);
+
+                    
                }
             }
         });
