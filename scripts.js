@@ -1,16 +1,30 @@
 $( document ).ready(function() {
+var alldata;
+var page =0;
 
-
-    $(".btn").click(function(){
+    $("#searchsongs").click(function(){
         var searchvalue = $("#searchplace").val();
         var apiURL = 'https://itunes.apple.com/search?term=';
         $.ajax({
             url : apiURL + searchvalue + '&entity=song',
             dataType : 'jsonp',
             success: function(data){
-               var res = data['results'];
-               for (var i=0; i<res.length && i<9; i++){
-                    
+                alldata = data;
+                reload();
+            }
+        });
+    });
+
+    $('#next').click(function(){
+        $("#newcard").children().remove();
+        page=page+1;
+        reload();
+    })
+
+
+    function reload(){
+        var res = alldata['results'];
+               for (var i=page*9; i<res.length && i<9*page+9; i++){
                     var cards = `   <div class=" col-lg-4">
                                     <div class="card">
                                     <div class="logo_song">
@@ -33,7 +47,7 @@ $( document ).ready(function() {
 
                     
                }
-            }
-        });
-    });
+    }
+
+
 });
