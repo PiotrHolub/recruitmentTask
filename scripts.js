@@ -11,7 +11,8 @@ $( document ).ready(function() {
                var res = data['results'];
                for (var i=0; i<res.length; i++){
                     
-                    var cards = `<div class="card">
+                    var cards = `   <div class=" col-lg-4">
+                                    <div class="card">
                                     <div class="logo_song">
                                         <img src="images/logo_song.jpg">
                                     </div>
@@ -24,6 +25,7 @@ $( document ).ready(function() {
                                     <div class="author">
                                         <p>By Ed Sheeran</p>
                                     </div>
+                                </div>
                                 </div>
                                 </div>`;
                     var html = $.parseHTML(cards);
