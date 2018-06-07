@@ -9,16 +9,16 @@ $( document ).ready(function() {
             dataType : 'jsonp',
             success: function(data){
                var res = data['results'];
-               for (var i=0; i<res.length; i++){
+               for (var i=0; i<res.length && i<9; i++){
                     
                     var cards = `   <div class=" col-lg-4">
                                     <div class="card">
                                     <div class="logo_song">
-                                        <img src="images/logo_song.jpg">
+                                       <img src="`+res[i]['artworkUrl100']+`">
                                     </div>
                                     <div class="title">
                                     <div class="song">
-                                        <p>Castle on the Hill</p>
+                                        <p>`+ res[i]['trackName']+`</p>
                                     </div>
                                     <div class="line">
                                     </div>
