@@ -44,7 +44,12 @@
     height: 140px;
     background-color: rgb(240,240,240);
     padding: 20px;
-    margin-bottom: 15px;
+    margin-bottom: 28px;
+    overflow:hidden;
+}
+
+#onecard :hover{
+    border: 2px solid rgb(247, 148, 29);
 }
 
 .logo_song {
@@ -53,8 +58,11 @@
 
 .title {
     display: inline-block;
-    width: 150px;
+    width: 110px;
     padding-left: 20px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 130px;
 }
 
 .song{
@@ -107,3 +115,7 @@
     padding-bottom: 98px;
 }
 
+#newcard{
+    max-width: 936px;
+    margin: 0 auto;
+}
