@@ -1,3 +1,6 @@
+p{
+    font-family: 'Lato', sans-serif;
+}
 .searchbackground{
     background-color: rgb(45, 45, 45);
 }
@@ -48,8 +51,9 @@
     overflow:hidden;
 }
 
-#onecard :hover{
+.card:hover{
     border: 2px solid rgb(247, 148, 29);
+    box-shadow:0 0 25px grey;
 }
 
 .logo_song {
@@ -63,6 +67,10 @@
     white-space: nowrap;
     text-overflow: ellipsis;
     max-width: 130px;
+}
+
+.p{
+    font-family: 'Lato', sans-serif;
 }
 
 .song{
@@ -115,7 +123,24 @@
     padding-bottom: 98px;
 }
 
+#prev{
+    display: none;
+}
+
+#next{
+    display: none;
+}
+
 #newcard{
     max-width: 936px;
     margin: 0 auto;
 }
+
+.logo{
+    padding-left: 154px;
+}
+@media only screen and (max-width: 576px) {
+    .logo{
+        padding-left: 10px;
+    };
+    };
